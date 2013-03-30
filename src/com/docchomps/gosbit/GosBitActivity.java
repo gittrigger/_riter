@@ -5430,7 +5430,7 @@ public class GosBitActivity extends Activity {
 							m0.setData(h8);
 							m0.what = hx.getInt("tabfy");
 							tabfy.removeMessages(m0.what);
-							tabfy.sendMessageDelayed(m0, 7880);
+							tabfy.sendMessageDelayed(m0, 880);
 
 						} else {
 							cmxb[hx.getInt("tabfy_pc", 0)].drawText("delayed",
@@ -7553,7 +7553,7 @@ public class GosBitActivity extends Activity {
 
 			} else {
 				Log.w("ok", provider + "(" + accuracy + "," + hardwaretype
-						+ ")" + " " + (bu != null ? bu.length : ""));
+						+ ")" + " " + (bu != null ? bu.length : 0));
 				return;
 			}
 
@@ -7823,7 +7823,7 @@ public class GosBitActivity extends Activity {
 					jxc[hardwaretype] = System.currentTimeMillis() + 30000;
 					Log.w("ok", provider + "            (" + accuracy + ","
 							+ hardwaretype + ")" + " "
-							+ (bu != null ? bu.length : "") + ": " + bu[0]
+							+ (bu != null ? bu.length : 0) + ": " + bu[0]
 							+ "(" + d0x + ") " + bu[1] + "(" + d1x + ") "
 							+ bu[2] + "(" + d2x + ")");
 				}
