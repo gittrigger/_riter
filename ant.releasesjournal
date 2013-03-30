@@ -1,0 +1,2035 @@
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+
+-setup:
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+    [setup] Android SDK Tools Revision 19
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+    [setup] ------------------
+
+-build-setup:
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+   [delete] Deleting directory /Users/havenskys/Documents/e/gosBit/bin/classes
+    [mkdir] Created dir: /Users/havenskys/Documents/e/gosBit/bin/classes
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found new input file
+     [aapt] Generating resource IDs...
+     [aapt]     (skipping hidden file '/Users/havenskys/Documents/e/gosBit/res/.DS_Store')
+     [aapt]     (skipping hidden file '/Users/havenskys/Documents/e/gosBit/res/drawable-ldpi/.DS_Store')
+     [aapt]     (skipping hidden file '/Users/havenskys/Documents/e/gosBit/res/drawable-mdpi/.DS_Store')
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] 32 errors
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+
+-set-mode-check:
+
+-set-release-mode:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+
+-setup:
+
+-release-obfuscation-check:
+
+-setup:
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+    [setup] Android SDK Tools Revision 19
+
+-release-obfuscation-check:
+
+-setup:
+
+-release-obfuscation-check:
+
+-setup:
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+
+-release-obfuscation-check:
+
+-setup:
+    [setup] Android SDK Tools Revision 19
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+    [setup] Android SDK Tools Revision 19
+    [setup] Android SDK Tools Revision 19
+    [setup] Android SDK Tools Revision 19
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+    [setup] ------------------
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+    [setup] ------------------
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+
+-build-setup:
+    [setup] ------------------
+
+-build-setup:
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+    [setup] ------------------
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+    [setup] ------------------
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+
+-build-setup:
+
+-build-setup:
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+
+-build-setup:
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+   [delete] Deleting directory /Users/havenskys/Documents/e/gosBit/bin/classes
+    [mkdir] Created dir: /Users/havenskys/Documents/e/gosBit/bin/classes
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...
+   [delete] Deleting directory /Users/havenskys/Documents/e/gosBit/bin/classes
+    [mkdir] Created dir: /Users/havenskys/Documents/e/gosBit/bin/classes
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...
+   [delete] Deleting directory /Users/havenskys/Documents/e/gosBit/bin/classes
+    [mkdir] Created dir: /Users/havenskys/Documents/e/gosBit/bin/classes
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...
+   [delete] Deleting directory /Users/havenskys/Documents/e/gosBit/bin/classes
+     [aidl] No AIDL files to compile.
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+    [mkdir] Created dir: /Users/havenskys/Documents/e/gosBit/bin/classes
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling aidl files...
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...
+     [echo] Handling RenderScript files...
+
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+[buildconfig] Build type changed: Generating new BuildConfig class.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] 			Swarm.showLogin();
+    [javac] symbol  : variable Swarm
+    [javac]                         ^
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac]                         ^
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                         ^
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac]                         ^
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac] 			Swarm.showLeaderboards();    [javac]                             ^
+
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] 32 errors
+    [javac] 32 errors
+    [javac] 32 errors
+    [javac] 32 errors
+    [javac] 32 errors
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+Buildfile: /Users/havenskys/Documents/e/gosBit/build.xml
+
+-set-mode-check:
+
+-set-release-mode:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+
+-setup:
+
+-release-obfuscation-check:
+
+-setup:
+
+-release-obfuscation-check:
+
+-setup:
+
+-set-mode-check:
+
+-set-release-mode:
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+    [setup] Android SDK Tools Revision 19
+
+-release-obfuscation-check:
+
+-setup:
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+    [setup] Android SDK Tools Revision 19
+    [setup] Android SDK Tools Revision 19
+    [setup] Android SDK Tools Revision 19
+
+-release-obfuscation-check:
+
+-setup:
+     [echo] Creating output directories if needed...
+     [echo] Gathering info for gosBit...
+    [setup] Android SDK Tools Revision 19
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+    [setup] ------------------
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] Project Target: Android 2.3.3
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup]     [setup] API level: 10
+
+    [setup] ------------------
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+
+-build-setup:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+    [setup] ------------------
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+    [setup] ------------------
+
+-build-setup:
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+
+-build-setup:
+
+-build-setup:
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+    [setup] Project Target: Android 2.3.3
+    [setup] API level: 10
+    [setup] 
+    [setup] ------------------
+    [setup] Resolving library dependencies:
+    [setup] No library dependencies.
+    [setup] 
+    [setup] ------------------
+    [setup] API<=15: Adding annotations.jar to the classpath.
+    [setup] 
+    [setup] ------------------
+   [delete] Deleting directory /Users/havenskys/Documents/e/gosBit/bin/classes
+    [mkdir] Created dir: /Users/havenskys/Documents/e/gosBit/bin/classes
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...
+
+-build-setup:
+   [delete] Deleting directory /Users/havenskys/Documents/e/gosBit/bin/classes
+    [mkdir] Created dir: /Users/havenskys/Documents/e/gosBit/bin/classes
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...   [delete] Deleting directory /Users/havenskys/Documents/e/gosBit/bin/classes
+
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+    [mkdir] Created dir: /Users/havenskys/Documents/e/gosBit/bin/classes
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+   [delete] Deleting directory /Users/havenskys/Documents/e/gosBit/bin/classes
+     [aidl] No AIDL files to compile.
+[renderscript] No RenderScript files to compile.
+     [echo] ----------     [echo] ----------
+
+     [echo] Handling Resources...
+     [echo] Handling RenderScript files...
+    [mkdir] Created dir: /Users/havenskys/Documents/e/gosBit/bin/classes
+
+-pre-build:
+
+-code-gen:
+     [echo] ----------
+     [echo] Handling aidl files...     [aidl] No AIDL files to compile.[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] ----------
+     [echo] Handling RenderScript files...
+
+
+     [echo] Handling Resources...
+[renderscript] No RenderScript files to compile.
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Build type changed: Generating new BuildConfig class.
+     [echo] ----------
+     [echo] Handling Resources...
+-pre-compile:
+
+-compile:
+
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+    [javac] Compiling 7 source files to /Users/havenskys/Documents/e/gosBit/bin/classes
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:14: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.Swarm;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:15: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:16: package com.swarmconnect.SwarmActiveUser does not exist
+    [javac] import com.swarmconnect.SwarmActiveUser.GotFriendsCB;
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:17: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:18: package com.swarmconnect.SwarmLeaderboard does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboard.GotLeaderboardCB;
+    [javac]                                          ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:19: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmLeaderboardScore;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:20: package com.swarmconnect does not exist
+    [javac] import com.swarmconnect.SwarmUser;
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:21: package com.swarmconnect.delegates does not exist
+    [javac] import com.swarmconnect.delegates.SwarmLoginListener;
+    [javac]                                   ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1929: cannot find symbol
+    [javac] symbol  : class SwarmLeaderboard
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmLeaderboard msleads;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1930: cannot find symbol
+    [javac] symbol  : class SwarmActiveUser
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	SwarmActiveUser mswarm;
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:121: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:141: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.setInactive(this);
+    [javac]                         ^
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:247: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 		Swarm.setActive(this);
+    [javac]                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1005: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^    [javac] 			Swarm.showDashboard();
+
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1014: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showDashboard();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1018: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLogin();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1022: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showStore();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1026: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showLeaderboards();
+    [javac]                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1030: cannot find symbol
+    [javac] symbol  : variable Swarm
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 			Swarm.showAchievements();
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                         ^
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] 32 errors
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1920: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 					Swarm.init(xact, 185, "c6cb2f55fd08674ee6aa9594aef39fc6",
+    [javac]                                         ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1931: cannot find symbol
+    [javac] symbol  : class GotLeaderboardCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotLeaderboardCB mca = new GotLeaderboardCB() {
+    [javac]                                    ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1950: package SwarmLeaderboard does not exist
+    [javac] 	SwarmLeaderboard.GotScoresCB mcas = new SwarmLeaderboard.GotScoresCB() {
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1965: cannot find symbol
+    [javac] symbol  : class GotFriendsCB
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	GotFriendsCB cbx = new GotFriendsCB() {
+    [javac]                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:1973: cannot find symbol
+    [javac] symbol  : class SwarmLoginListener
+    [javac] location: class com.docchomps.gosbit.GosBitActivity
+    [javac] 	private SwarmLoginListener mchug = new SwarmLoginListener() {
+    [javac]                                                ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2033: cannot find symbol
+    [javac] symbol: variable Swarm
+    [javac] 			if (Swarm.isEnabled()) {
+    [javac]                             ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2041: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_DATE_TODAY,
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2042: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 								SwarmLeaderboard.LEADERBOARD_SCOPE_ALL, mcas);
+    [javac]                                                                 ^
+    [javac] /Users/havenskys/Documents/e/gosBit/src/com/docchomps/gosbit/GosBitActivity.java:2049: cannot find symbol
+    [javac] symbol: variable SwarmLeaderboard
+    [javac] 					SwarmLeaderboard.getLeaderboardById(210, mca);
+    [javac]                                         ^
+    [javac] 32 errors
+    [javac] 32 errors
+    [javac] 32 errors
+    [javac] 32 errors
